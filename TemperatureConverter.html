@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="yellow" />
+    <meta name="author" content="tharun-kumar-2238b9248" />
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="./tc.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h2 id="heading">Temperature Converter</h2>
+      <div id="calculations">
+        <div class="content-division">
+          <div class="division-heading">From</div>
+          <div class="inputs-container">
+            <input
+              type="number"
+              class="input-field inputs"
+              name="input"
+              id="input-box"
+              placeholder="0"
+              required
+            />
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="input-dropdown">
+                <option value="Celcius" selected>Celcius</option>
+                <option value="Farenheit">Farenheit</option>
+                <option value="Kelvin">Kelvin</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="content-division">
+          <div class="division-heading">To</div>
+          <div class="inputs-container">
+            <input
+              type="text"
+              class="input-field inputs"
+              name="result"
+              id="result-box"
+              placeholder="0"
+              disabled
+            />
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="result-dropdown">
+                <option value="Farenheit" selected>Farenheit</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Kelvin">Kelvin</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button id="convert-btn" class="button1" onclick="converter()">
+          <h3>Convert</h3>
+        </button>
+
+        <footer>
+            &#169; 2023, Designed by -<br>
+            <a href="https://www.linkedin.com/in/tharun-kumar-2238b9248" target="_blank">
+              Tharun Kumar Katabathina
+            </a>
+          </footer>
+      </div>
+      
+    </div>
+    <script src="./tc.js"></script>
+  </body>
+</html>
